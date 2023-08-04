@@ -14,6 +14,11 @@ import javax.inject.Inject
  * In this project, you will be creating a shopping app for a local store with a Fake Store API.
  * We will be using Retrofit, GSON, Dagger, Room and Coroutines to build this app.
  * We will also be using the MVVM architecture to build this app.
+ * How our MainActivity works:
+ * 1. We inject our MainViewModelFactory into our MainActivity
+ * 2. We use the MainViewModelFactory to create our MainViewModel
+ * 3. We observe the LiveData from our MainViewModel
+ * 4. We display the products from our LiveData in our TextView
  */
 
 class MainActivity : AppCompatActivity() {

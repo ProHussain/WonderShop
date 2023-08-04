@@ -8,6 +8,11 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
+/**
+ * NetworkModule is a Dagger module responsible for network operations
+ * such as providing Retrofit instances and API interfaces.
+ */
+
 @Module
 class NetworkModule {
 
