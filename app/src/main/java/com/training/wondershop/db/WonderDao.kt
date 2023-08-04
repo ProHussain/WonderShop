@@ -12,7 +12,7 @@ import com.training.wondershop.models.Product
 
 @Dao
 interface WonderDao {
-    @Insert
+    @Insert (onConflict = androidx.room.OnConflictStrategy.REPLACE)
     suspend fun addProduct(product: List<Product>)
 
     @Query("SELECT * FROM product")

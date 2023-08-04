@@ -6,6 +6,7 @@ import androidx.lifecycle.viewModelScope
 import com.training.wondershop.models.Product
 import com.training.wondershop.repository.ProductsRepository
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
 /**
  * MainViewModel is a class that is responsible for preparing and managing the data for an Activity.
@@ -17,7 +18,7 @@ import kotlinx.coroutines.launch
  * It allows data to survive configuration changes such as screen rotations.
  */
 
-class MainViewModel(private val repository: ProductsRepository) : ViewModel() {
+class MainViewModel @Inject constructor (private val repository: ProductsRepository) : ViewModel() {
     val productsLiveData: LiveData<List<Product>>
         get() = repository.products
 
