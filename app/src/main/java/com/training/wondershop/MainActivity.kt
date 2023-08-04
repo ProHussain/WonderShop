@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.TextView
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.training.wondershop.viewmodel.HomeViewModel
 import com.training.wondershop.viewmodel.MainViewModel
 import com.training.wondershop.viewmodel.MainViewModelFactory
 import javax.inject.Inject
@@ -23,6 +24,7 @@ import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
 
+    lateinit var homeViewModel: HomeViewModel
     lateinit var mainViewModel: MainViewModel
     @Inject
     lateinit var mainViewModelFactory: MainViewModelFactory
@@ -35,9 +37,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         (application as WonderApplication).applicationComponent.inject(this)
         mainViewModel = ViewModelProvider(this, mainViewModelFactory)[MainViewModel::class.java]
+        homeViewModel = ViewModelProvider(this)[HomeViewModel::class.java]
 
         mainViewModel.productsLiveData.observe(this) {
             text.text = it.joinToString { product -> product.title }
         }
+        homeViewModel.writeSomething()
     }
 }

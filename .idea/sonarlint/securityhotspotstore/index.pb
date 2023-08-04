@@ -9,8 +9,6 @@ F
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
 S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
-j
-:app/src/main/java/com/training/wondershop/models/Rating.kt,5\9\59ca474bb944ae562a93ee3d9c06641d9a1dc987
 A
 gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4
 @
@@ -28,3 +26,19 @@ X
 gradlew.bat,2\a\2a45a911a8f1836b0b6c5b758962572012d8f8c3
 >
 app/.gitignore,5\1\51e1c5d383dfaa35e0e7e5873a0a99355a86880f
+l
+<app/src/main/java/com/training/wondershop/utils/Constants.kt,4\8\488d4833311264b095a2218ffe4a48ea61efde66
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+n
+>app/src/main/java/com/training/wondershop/WonderApplication.kt,f\d\fd157376b03829f41c3fe2e6c7744740b6e65b5c
+m
+=app/src/main/java/com/training/wondershop/di/NetworkModule.kt,e\5\e55125a8765cfc4f8d95c20b38c6c103da11545d
+n
+>app/src/main/java/com/training/wondershop/db/WonderDatabase.kt,d\8\d8f4b011290a6700f41945f4ee0758e541fa9d32
+o
+?app/src/main/java/com/training/wondershop/retrofit/WonderAPI.kt,0\7\0728e73fa61ab73a095e0caf609633d9a5c3d5a7
+n
+>app/src/main/java/com/training/wondershop/di/DatabaseModule.kt,b\b\bbb9c678b4300fa2150de8ab56815859f3a13c90
+D
+app/build.gradle.kts,d\2\d2a4383452aad84a18429a5844d31330a012a9e6
