@@ -16,6 +16,7 @@ import javax.inject.Inject
  * So we will create a generic ViewModelProvider.Factory
  * Let's learn how to do that
  * We will retrieve the ViewModel from the map that we get from the ApplicationComponent interface
+ * Use @JvmSuppressWildcards annotation to suppress the wildcard type error that we get from the map
  */
 
 class MainViewModelFactory @Inject constructor(private val map: Map<Class<*>,@JvmSuppressWildcards ViewModel>) : ViewModelProvider.Factory {
